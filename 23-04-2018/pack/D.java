@@ -38,7 +38,7 @@ public class D extends C{
 		int num=0; //Sums number of numbers on a string
 		for(int i=0; i<s.length(); i++) {
 			if(Character.isDigit(s.charAt(i))) //Checking if a character is a number
-				num++;
+				num+=s.charAt(i)-48; //0 is 48 on ASCII table
 		}
 		return num;
 	}
